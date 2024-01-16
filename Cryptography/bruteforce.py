@@ -1,20 +1,21 @@
-plaintext = "Prince"
+ciphertext = "Rtjoq"
 
-print("Plaintext: ", plaintext)
+print("Ciphertext:", ciphertext)
 
 for shift in range(1, 27):
-  
-  encrypted = ""
-  for char in plaintext:
+
+  decrypted = ""
+
+  for char in ciphertext:
     if char.isalpha():
       char_code = ord(char)
-      char_code = (char_code - ord('A') + shift) % 26 + ord('A')
-      encrypted += chr(char_code)
+      char_code = (char_code - ord('A') - shift + 26) % 26 + ord('A')
+      decrypted += chr(char_code)
     else:
-      encrypted += char
+      decrypted += char
 
-  print("Shift: ", shift)
-  print("Encrypted: ", encrypted)
+  print("Shift:", shift)
+  print("Decrypted:", decrypted)
   print()
 
 print("Done!")
