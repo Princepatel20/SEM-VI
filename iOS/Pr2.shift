@@ -1,0 +1,116 @@
+import UIKit var name = 
+
+“Prajapati Yash” var enroll = 
+
+“202103103510075” 
+
+print(name); 
+
+print(enroll) class 
+
+person{ var name : 
+
+String ; var age : Int 
+
+var gender : String ; 
+
+var city : String 
+
+init(name1 : String , age1 : Int , gender1 : String , 
+
+city1:String){ name = name1 age = age1 gender = 
+
+gender1 city = city1 
+
+} 
+
+func set(){ print("Name is : \(name)" , "Age is : \(age)" , "Gender is : \(gender)" 
+
+, "City is : \(city)") 
+
+} 
+
+func get(){ print("Name is : \(name)" , "Age is : \(age)" , "Gender is : \(gender)" 
+
+, "City is : \(city)") 
+
+} 
+
+} 
+
+class student : person {
+var id : Int = 1 var sem 
+
+: Int = 6 
+
+var div : Character = 
+
+"A" var m1 : Float = 90 
+
+var m2 : Float = 24 var 
+
+m3 : Float = 35 
+
+init (){ 
+
+super.init(name1: "Yash", age1: 50, gender1: "Male", city1: "Surat") 
+
+} 
+
+func result(){ let t : Float = 
+
+(m1+m2+m3)/3 
+
+print("Result is : \(t) ") 
+
+} 
+
+} 
+
+class employee : person { 
+
+var id : Int = 3 
+
+var designation : String = "Manager" 
+
+var salary : Float = 100000 
+
+init (){ 
+
+super.init(name1: "Shruti", age1: 35, gender1: "Male", city1: "Valsad") 
+
+} 
+
+func gross_salary(){ 
+
+if(salary < 10000) 
+
+{ 
+
+salary = salary + (salary * (10/100)) + (salary * (5/100)) - 200 
+
+} 
+
+else { salary = salary + (salary * (15/100)) + (salary * (7/100)) - (salary * 
+
+(10/100)) 
+
+} 
+
+print("Gross Salary is :\(salary)") 
+
+} 
+
+} 
+
+var a = student() 
+
+a.set() 
+
+a.result() var b = 
+
+employee() 
+
+b.get() 
+
+b.gross_salary()
