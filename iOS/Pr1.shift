@@ -1,0 +1,79 @@
+X code ide:
+import UIKit var name = “Yash 
+Prajapati” var enroll = 
+“202103103510075” 
+print(name) print(enroll) 
+func palin (number: Int) -> Int 
+{ var flag1: Int = 0 for i in 
+2..<a-1 
+{ 
+if a % i == 0 
+{ 
+flag1 = 1 
+break 
+} 
+} 
+return flag1
+} 
+
+var a = 13 
+
+var t = palin (number : a) 
+
+if (t == 0) 
+
+{ 
+
+print(“Number is Prime”) 
+
+} 
+
+else 
+
+{ 
+
+print(“Number is not Prime”) 
+
+}
+
+b. Check whether the number is palindrome or not. 
+
+Code: 
+
+import UIKit var name = “Yash 
+
+Prajapati” var enroll = 
+
+“202103103510075” 
+
+print(name); 
+
+print(enroll) 
+
+func palindrome (str1 : [Character], str2 [Character]) -> 
+
+Int { var flag Int = 0 let b = a.count for i in 0...b-1{ if 
+
+str1[i] != str2[i]{ flag = 1 
+
+} 
+
+} 
+
+return flag 
+
+} 
+
+var a : [Character] = [“N”,”A”,”Y”,”A”,”N”] var 
+
+t = palindrome (str1 : a, str2: a.reversed()) 
+
+if(t == 1){ print(“It Is Not a Palindrome”) 
+
+} 
+
+else{ 
+
+print(“It Is a Palindrome”) 
+
+}
