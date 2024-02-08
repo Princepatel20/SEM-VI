@@ -1,0 +1,59 @@
+import UIKit class ViewController: 
+
+UIViewController { @IBOutlet var 
+
+Text1: UITextField! 
+
+ @IBOutlet var Label1: UILabel! 
+
+ @IBAction func Button1(_ sender: Any) { 
+
+ l1.text=t1.text 
+
+ } 
+
+ override func viewDidLoad() { 
+
+super.viewDidLoad() 
+
+ // Do any additional setup after loading the 
+
+view. 
+
+}
+
+import UIKit class ViewController: 
+
+UIViewController { @IBOutlet var 
+
+t1: UITextField! @IBAction func 
+
+b1(_ sender: Any) { let 
+
+b=Int(t1.text!)! if (b%2==0){ 
+
+ l1.text="even" 
+
+ } 
+
+else{ 
+
+ l1.text="odd"
+
+ } } 
+
+ @IBOutlet var l1: UILabel! 
+
+override func viewDidLoad() { 
+
+super.viewDidLoad() 
+
+ // Do any additional setup after loading the 
+
+view. 
+
+ 
+
+} 
+
+}
