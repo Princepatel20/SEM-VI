@@ -1,0 +1,29 @@
+// Design an activity which contains three fragments horizontally.First fragment contains the gallery of institute, second fragment contains available courses. If user selects a particular course from the list then third Fragment displays the description of selected course from the second fragment.
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.pr3.first"
+        android:id="@+id/f1">
+    </fragment>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.pr3.second"
+        android:id="@+id/f2">
+    </fragment>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.pr3.third"
+        android:id="@+id/f3">
+    </fragment>
+
+</LinearLayout>
