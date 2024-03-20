@@ -37,12 +37,12 @@ const main = async () => {
     const allUsers = await User.find();
     console.log("All users:", allUsers);
     const updatedUser = await User.findOneAndUpdate(
-      { name: "Vaidik Ghelani" },
+      { name: "Prince Gondaliya" },
       { age: 20 },
       { new: true }
     );
     console.log("Updated user:", updatedUser);
-    const deletedUser = await User.findOneAndDelete({ name: "Vaidik Ghelani" });
+    const deletedUser = await User.findOneAndDelete({ name: "Prince Gondaliya" });
     console.log("Deleted user:", deletedUser);
     const remainingUsers = await User.find();
     console.log("Remaining users:", remainingUsers);
