@@ -1,0 +1,90 @@
+Viewcontroller:-
+
+import UIKit
+
+class ViewController: UIViewController {
+
+ @IBOutlet weak var t1: UITextField!
+
+ @IBAction func b1(_ sender: UIButton) {
+
+ let a = Int(t1.text!)!
+
+ var temp:Int = 0
+
+ for i in 2...a-1{
+
+ if(a%i==0){
+
+ temp=1
+
+ }
+
+ if (temp==1){
+
+ l1.text = "Not a Prime Number"
+
+ }
+
+ else{
+
+ l1.text = "Prime Number"
+
+ }
+
+ }
+
+ }
+ @IBOutlet weak var l1: UILabel
+
+ override func viewDidLoad() {
+
+ super.viewDidLoad()
+
+ // Do any additional setup after loading the view.
+
+ }
+
+}
+
+Viecontroller2:
+
+import UIKit
+
+class ViewController2: UIViewController { 
+
+ @IBOutlet weak var t2: UITextField! 
+
+ @IBAction func b2(_ sender: UIButton) {
+
+ if let text = t2.text{
+
+ let trim = text.trimmingCharacters(in: .whitespacesAndNewlines)
+
+ let reverse = String(trim.reversed())
+
+ 
+
+ if trim.lowercased() == reverse.lowercased(){
+
+ l2.text = "Palindrome"
+
+ }
+
+ else{
+
+ l2.text = "Not a Palindrome"
+
+ }
+
+ }
+
+ }
+
+ @IBOutlet weak var l2: UILabel!
+
+ override func viewDidLoad() {
+
+ super.viewDidLoad()
+
+ }
