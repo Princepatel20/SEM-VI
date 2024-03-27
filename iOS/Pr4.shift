@@ -1,0 +1,60 @@
+import UIKit
+
+class ViewController: UIViewController {
+
+ @IBOutlet var l1: UILabel!
+
+ @IBOutlet var l2: UILabel!
+
+ let questionarr:[String]=[
+
+ "WHO IS THE PRIME MINISTER OF INDIA?",
+
+ "WHICH IS THE HIGHEST PEAK IN INDIA?",
+
+ "WHAT IS 9+90?"
+
+ ]
+
+ let answerarr:[String]=[
+
+ "NARENDRA MODI",
+
+ "MOUNT EVEREST",
+
+ "99"
+
+ ]
+
+ var currentindex:Int = 0
+
+ @IBAction func b1(_ sender: Any) {
+
+ currentindex += 1
+
+ if (currentindex == questionarr.count){
+
+ currentindex=0
+
+ }
+
+ l1.text=questionarr[currentindex]
+
+ l2.text="??????"
+
+ }
+ @IBAction func b2(_ sender: Any) {
+
+ l2.text=answerarr[currentindex
+
+ }
+
+ override func viewDidLoad() {
+
+ super.viewDidLoad()
+
+ // Do any additional setup after loading the view.
+
+ }
+
+}
