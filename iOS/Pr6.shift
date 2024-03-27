@@ -1,0 +1,94 @@
+Viewcontroller:
+
+import UIKit
+
+class ViewController: UIViewController {
+
+ @IBOutlet var t1: UITextField!
+
+ @IBOutlet var t2: UITextField!
+
+ @IBOutlet var t3: UITextField!
+
+ @IBOutlet var t4: UITextField!
+
+ @IBOutlet var t5: UITextField!
+
+ @IBOutlet var d1: UIDatePicker!
+
+ @IBAction func b1(_ sender: UIButton) {
+
+ performSegue(withIdentifier: "id", sender:sender)
+
+ }
+
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+ if let vc2=segue.destination as? ViewController2
+
+ {
+
+ vc2.str1=t1.text;
+
+ vc2.str2=t2.text;
+
+ vc2.str3=t3.text;
+
+ vc2.str4=t4.text;
+
+ vc2.str5="\(d1.date)";
+
+ }
+
+ }
+
+ override func viewDidLoad() {
+
+ super.viewDidLoad()
+
+ }
+
+}
+Viewcontroller2:
+
+import UIKit
+
+class ViewController2: UIViewController {
+
+ var str1: String?
+
+ var str2: String?
+
+ var str3: String?
+
+ var str4: String?
+
+ var str5: String?
+
+ @IBOutlet var l11: UILabel!
+
+ @IBOutlet var l12: UILabel!
+
+ @IBOutlet var l13: UILabel!
+
+ @IBOutlet var l14: UILabel!
+
+ @IBOutlet var l15: UILabel!
+
+ override func viewDidLoad() {
+
+ l11.text=str1;
+
+ l12.text=str2;
+
+ l13.text=str3;
+
+ l14.text=str4;
+
+ l15.text=str5;
+
+ super.viewDidLoad()
+
+ }
+
+}
